@@ -1,5 +1,5 @@
 This repository is the Rust WASM codes for [Building a Pixel Editor in Rust & WebAssembly (and Javascript)
-](https://www.youtube.com/watch?v=rHRBJKWbbw0&list=WL&index=5&t=3082s) from YouTube channel, [Michael Jone](https://www.youtube.com/channel/UCtOyRH-70S59592n-5i-02Q).
+](https://www.youtube.com/watch?v=rHRBJKWbbw0&list=WL&index=5&t=3082s) from YouTube channel, [Michael Jones](https://www.youtube.com/channel/UCtOyRH-70S59592n-5i-02Q).
 
 ## How to install
 
