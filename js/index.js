@@ -58,10 +58,12 @@ function setupCanvas(state) {
 
     canvas.addEventListener("mousedown", (event) => {
         state.dragging = true;
+        state.internal.start_undo_block();
     });
 
     canvas.addEventListener("mouseup", (event) => {
         state.dragging = false;
+        state.internal.close_undo_block();
     });
 
     canvas.addEventListener("mousemove", (event) => {
@@ -92,6 +94,16 @@ function setupCanvas(state) {
 
     document.getElementById("blue").addEventListener("click", (event) => {
         state.currentColor = [200, 200, 255];
+    });
+
+    document.getElementById("undo").addEventListener("click", (event) => {
+        state.internal.undo();
+        draw(state);
+    });
+
+    document.getElementById("redo").addEventListener("click", (event) => {
+        state.internal.redo();
+        draw(state);
     });
 }
 
